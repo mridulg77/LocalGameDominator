@@ -11,7 +11,7 @@ import android.view.WindowManager;
 import srk.mgstyles.gameofcards.R;
 
 
-public class SplashScreenActivity extends ActionBarActivity {
+public class SplashActivity extends ActionBarActivity {
 
     private static int SPLASH_TIME_OUT = 4000;
 
@@ -26,7 +26,7 @@ public class SplashScreenActivity extends ActionBarActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SplashScreenActivity.this, GameActivity.class);
+                Intent i = new Intent(SplashActivity.this, GameActivity.class);
                 startActivity(i);
                 finish();
             }
