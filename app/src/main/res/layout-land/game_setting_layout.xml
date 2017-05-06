@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    style="@style/tableBackground"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <View
+        android:layout_width="280dp"
+        android:background="@color/inputText"
+        android:layout_height="470dp"
+        android:alpha="0.3"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/view" />
+
+    <RadioGroup
+        android:id="@+id/dealtType"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioEven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deal Evenly"
+            android:textColor="#ffffff"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioExact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textColor="#ffffff"
+            android:text="Deal Exactly" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/cards_spinner"
+        android:layout_width="60dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dealtType"
+        android:layout_toRightOf="@+id/dealtType"
+        android:layout_toEndOf="@+id/dealtType"
+        android:layout_alignBottom="@+id/dealtType" />
+    <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+    <!--android:id="@+id/dealNumber"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Enter Number"-->
+    <!--android:textSize="15dp"-->
+    <!--android:maxLength="1"-->
+    <!--android:layout_toRightOf="@+id/dealtType"-->
+    <!--android:textStyle="bold"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--app:met_baseColor="#ffffff"-->
+    <!--android:gravity="center"-->
+    <!--app:met_primaryColor="@color/editTextSelect"-->
+    <!--android:inputType="number" />-->
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/deckNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number of Decks"
+        android:textSize="15dp"
+        android:maxLength="1"
+        android:textStyle="bold"
+        app:met_baseColor="#ffffff"
+        android:gravity="center"
+        app:met_iconPadding="0dp"
+        app:met_iconLeft="@drawable/card_game"
+        app:met_primaryColor="@color/editTextSelect"
+        android:inputType="number"
+        android:layout_alignTop="@+id/dealtType"
+        android:layout_alignRight="@+id/view"
+        android:layout_alignEnd="@+id/view" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cardDesignList"
+            android:background="@color/inputText"
+            android:alpha="0.7"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tableDesignList"
+            android:background="@color/inputText"
+            android:alpha="0.7"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancelChanges"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textAllCaps="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_drawable"
+        android:textColor="@color/headerText"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/manageDeck"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Manage Deck"
+        android:textAllCaps="true"
+        android:background="@drawable/button_drawable"
+        android:textColor="@color/headerText"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignTop="@+id/cancelChanges"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/applySettings"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:textAllCaps="true"
+        android:background="@drawable/button_drawable"
+        android:textColor="@color/headerText"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignTop="@+id/manageDeck"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+

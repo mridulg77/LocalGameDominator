@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/tableBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <View
+
+        android:layout_width="320dp"
+        android:layout_height="470dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.3"
+        android:id="@+id/view"
+        android:background="@color/inputText" />
+
+    <TextView
+        android:id="@+id/menuText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="MAIN MENU"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/headerText"
+        android:textStyle="bold" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/userName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/menuText"
+        android:layout_alignRight="@+id/menuText"
+        android:layout_centerVertical="true"
+        android:hint="username"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLength="30"
+        app:met_baseColor="#ffffff"
+        app:met_iconLeft="@drawable/user_icon"
+        app:met_iconPadding="0dp"
+        app:met_primaryColor="@color/editTextSelect" />
+
+    <Button
+        android:id="@+id/hostGame"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_drawable"
+        android:text="Host Game"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/headerText" />
+
+
+    <Button
+        android:id="@+id/joinGame"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_drawable"
+        android:text="Join Game"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/headerText" />
+
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/info_icon"
+        android:layout_alignBottom="@+id/menuText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:onClick="abc"
+        android:background="@drawable/button_drawable"
+
+        android:layout_alignBaseline="@+id/userName"
+        android:layout_alignBottom="@+id/infoButton"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_drawable"
+        android:text="Records"
+        android:layout_alignBaseline="@+id/infoButton"
+        android:layout_alignBottom="@+id/infoButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+

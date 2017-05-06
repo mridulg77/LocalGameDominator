@@ -1,0 +1,322 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/tableBackground"
+    android:id="@+id/mainGameLayout"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/inputText"
+        android:alpha="0.5"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:id="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/player1Image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:src="@drawable/active_icon" />
+
+        <TextView
+            android:id="@+id/player1Text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/secondaryBackground"
+            android:text="Player1" />
+
+        <ImageView
+            android:id="@+id/player2Image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:src="@drawable/active_icon" />
+
+        <TextView
+            android:id="@+id/player2Text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/secondaryBackground"
+            android:text="Player2" />
+
+        <ImageView
+            android:id="@+id/player3Image"
+            android:layout_width="20dp"
+            android:visibility="gone"
+            android:layout_height="20dp"
+            android:src="@drawable/active_icon" />
+
+        <TextView
+            android:id="@+id/player3Text"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/secondaryBackground"
+            android:text="Player3" />
+
+        <ImageView
+            android:id="@+id/player4Image"
+            android:visibility="gone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/active_icon" />
+
+        <TextView
+            android:id="@+id/player4Text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/secondaryBackground"
+            android:text="Player4" />
+
+        <ImageView
+            android:id="@+id/player5Image"
+            android:layout_width="20dp"
+            android:visibility="gone"
+            android:layout_height="20dp"
+            android:src="@drawable/active_icon" />
+
+        <TextView
+            android:id="@+id/player5Text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/secondaryBackground"
+            android:text="Player5" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/inputText"
+        android:alpha="0.5"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout4">
+
+        <ImageView
+            android:id="@+id/currentPlayerImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/active_icon" />
+
+        <TextView
+            android:id="@+id/currentPlayerText"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/secondaryBackground"
+            android:text="Player1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_drawable"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:paddingRight="10dp"
+        android:id="@+id/linearLayout3">
+
+        <Button
+            android:id="@+id/dealCardsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/deck_icon"
+            android:text="Deal Cards"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@color/inputText" />
+
+        <Button
+            android:id="@+id/newGameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/deck_icon"
+            android:text="New Game"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@color/inputText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="10dp"
+        android:id="@+id/linearLayout5"
+        android:layout_alignTop="@+id/tableView"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/foldCardsButton"
+                android:layout_width="60dp"
+                android:layout_height="61dp"
+                android:textStyle="bold"
+                app:cb_pressedRingWidth="8dip"
+                android:layout_marginBottom="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/circle_button_drawable" />
+
+            <TextView
+                android:id="@+id/myImageViewText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/foldCardsButton"
+                android:layout_alignTop="@+id/foldCardsButton"
+                android:layout_alignRight="@+id/foldCardsButton"
+                android:layout_alignBottom="@+id/foldCardsButton"
+                android:text="Fold&#10;Cards"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:id="@+id/playButton"
+                app:cb_color="#0099CC"
+                android:visibility="invisible"
+                app:cb_pressedRingWidth="8dip"
+                android:layout_marginBottom="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/circle_button_drawable" />
+
+            <TextView
+                android:id="@+id/myImageViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_alignLeft="@+id/playButton"
+                android:layout_alignTop="@+id/playButton"
+                android:layout_alignRight="@+id/playButton"
+                android:layout_alignBottom="@+id/playButton"
+                android:text="Play&#10;Move"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/hideCardsButton"
+                android:layout_width="60dp"
+                android:layout_height="61dp"
+                android:textStyle="bold"
+                app:cb_pressedRingWidth="8dip"
+                android:layout_marginBottom="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/circle_button_drawable" />
+
+            <TextView
+                android:id="@+id/myImageViewText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/hideCardsButton"
+                android:layout_alignTop="@+id/hideCardsButton"
+                android:layout_alignRight="@+id/hideCardsButton"
+                android:layout_alignBottom="@+id/hideCardsButton"
+                android:text="Show&#10;Cards"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tableView"
+        android:background="@color/inputText"
+        android:alpha="0.7"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:layout_toStartOf="@+id/linearLayout5"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_toLeftOf="@+id/linearLayout5" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardHand"
+        android:background="@color/inputText"
+        android:alpha="0.7"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/linearLayout3"
+        android:layout_toRightOf="@+id/linearLayout3"
+        android:layout_marginLeft="18dp"
+        android:layout_toLeftOf="@+id/linearLayout5"
+        android:layout_toStartOf="@+id/linearLayout5" />
+
+</RelativeLayout>
+
