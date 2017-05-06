@@ -1,4 +1,4 @@
-# LocalGame-Dominator
+# Local Game Dominator
 
 Let us introduce you to LocalGame Dominator. This game has no rules. The rules are
 decided in the beginning of the game and followed by the players. There are basic
